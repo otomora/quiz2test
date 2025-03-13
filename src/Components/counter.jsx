@@ -14,11 +14,11 @@ export function Counter() {
         margin: '20px 0'
       }}>
         <button 
-          onClick={decreaseCount}
+          onClick={increaseCount}
           style={buttonStyle}
-          title="Decrementar"
+          title="increase"
         >
-          ➖
+          ✙
         </button>
         
         <button 
@@ -26,15 +26,15 @@ export function Counter() {
           style={buttonStyle}
           title="Resetear"
         >
-          🔄
+          ↺
         </button>
         
         <button 
-          onClick={increaseCount}
+          onClick={decreaseCount}
           style={buttonStyle}
-          title="Incrementar"
+          title="Decrementar"
         >
-          ➕
+          ‒
         </button>
       </div>
       

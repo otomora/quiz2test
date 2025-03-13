@@ -52,7 +52,6 @@ export function Counter() {
   )
 }
 
-// Estilos minimalistas
 const buttonStyle = {
   fontSize: '24px',
   padding: '10px 20px',

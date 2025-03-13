@@ -45,7 +45,7 @@ export function Counter() {
           marginTop: '15px',
           fontWeight: '500'
         }}>
-          ⚽ ¡11 es mi número favorito!
+          11 es mi número favorito
         </p>
       )}
     </div>

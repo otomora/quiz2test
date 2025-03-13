@@ -1,10 +1,19 @@
+import { useState } from 'react' 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Counter } from './Components/counter'
 
 function App() {
+  const [count, setCount] = useState(0) 
 
+  //  número favorito
+  function numeroFavorito() {
+    if (count === 11) {
+      return <p>El 11 es mi número favorito</p>
+    }
+    return null
+  }
 
   return (
     <>
@@ -18,7 +27,11 @@ function App() {
       </div>
       <h1>Vite + React</h1>
 
-      <Counter/>
+      {/*  Counter para que este actualizado */}
+      <Counter count={count} setCount={setCount} />
+      
+      {/* Mostrar mensaje cuando sea 11 */}
+      {numeroFavorito()}
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
@@ -26,6 +39,5 @@ function App() {
     </>
   )
 }
-
 
 export default App
